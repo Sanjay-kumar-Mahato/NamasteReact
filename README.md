@@ -1,2 +1,2 @@
-Package.json is the configuration for npn
+Package.json contains the configuration for npm
 <br> Author : Sanjay
