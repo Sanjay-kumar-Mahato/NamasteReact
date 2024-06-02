@@ -1,4 +1,5 @@
-
+import React from "react";
+import ReactDOM from "react-dom/client";
 // async function getData(){
 //     return "Hi How Are You?";
 // }
@@ -50,3 +51,7 @@ const heading2 = React.createElement("div",{id:"Parent", className :"DOM"},
 
 const dom2 = ReactDOM.createRoot(document.getElementById("heading2"));
 dom2.render(heading2);
+
+const Heading3 = () => <h3 id="h3">Namaste React from React Function Component</h3>;
+const rootHeading3 = ReactDOM.createRoot(document.getElementById("heading3"));
+rootHeading3.render(<Heading3 />);
