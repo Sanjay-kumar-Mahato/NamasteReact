@@ -1,80 +1,115 @@
-.header{
+.header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid ;
+    border: 2px solid;
 }
-.header > img {
+
+.header>img {
     width: 130px;
     height: 130px;
     padding: 5px;
 }
+
 .search-bar {
     flex-grow: 1;
     margin: 0 20px;
     padding: 5px;
     font-size: 16px;
 }
-.nav-bar{
+
+.nav-bar {
     display: block;
+    flex-direction: column;
+    align-content: center;
     width: 20%;
     float: right;
 }
+
+
 .unorderred-nav li {
     cursor: pointer;
     margin: 3px;
     padding: 3px;
     background-color: blanchedalmond;
     border-radius: 5px;
-    max-width: 80px;;
+    max-width: 80px;
+    ;
 }
-ul{
+
+ul {
 
     list-style-type: none;
     font-size: large;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .res-card {
     margin: 5px;
     height: 300px;
     width: 185px;
-    background-color:rgb(250, 236, 219);
+    background-color: rgb(250, 236, 219);
     padding: 5px;
     border-radius: 8px;
 }
-.res-card:hover{
+
+.res-card:hover {
     cursor: pointer;
     border: 2px solid rgb(151, 146, 146);
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
 }
-.res-card > img {
+
+.res-card>img {
     max-height: 150px;
     max-width: 190px;
-    padding:  2px 16px;
+    align-content: center;
+    padding: 2px;
 }
-.res-name{
+
+.res-name {
     margin: 2px;
 }
-.body{
+
+.body {
     display: flex;
     flex-wrap: wrap;
-    width:auto;
+    width: auto;
     padding: 5px;
 }
-.rate-time{
+
+.body-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.top-ratings-btn{
+    padding: 10px;
+    box-sizing: border-box;
+}
+#cuisines{
+    max-height: 30px;
+    word-wrap: break-word
+}
+.rate-time {
     max-height: 30px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
-.rate-time h5,p{
+
+.rate-time h5,
+p {
     margin: 10px;
 }
+
 .footer {
-  padding: 20px 10px;
-  border: 1px solid black;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+    padding: 20px 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
