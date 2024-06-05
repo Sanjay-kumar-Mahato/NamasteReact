@@ -5,12 +5,12 @@ const Body = () => {
         <div className="body">
             <div className="body-top">
                 <div>
-                    <p><strong>Address :</strong>Maharani Farm,Jaipur,Rajasthan</p>
+                    <p className="address"><strong>Address :</strong>Maharani Farm,Jaipur,Rajasthan</p>
                 </div>
                 <div className="top-ratings-btn">
                     <button>Top Ratings</button>
                 </div>
-                <div>
+                <div className="search">
                     <input type="text" placeholder="Search..." className="search-bar" />
                 </div>
             </div>

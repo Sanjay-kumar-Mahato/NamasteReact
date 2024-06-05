@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid;
+    /* border: 2px solid; */
+    /* background-image: url("./src/utils/Bar.jpeg"); */
+    background-color: rgb(218, 133, 36);
 }
 
 .header>img {
@@ -36,42 +38,36 @@
     max-width: 80px;
     ;
 }
-
 ul {
 
     list-style-type: none;
     font-size: large;
 }
+
+.body-top{
+    background-color: rgb(237, 229, 220);
+    border-radius: 5px;
+}
+.address{
+    padding: 2px 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(227, 188, 143);
+}
+.top-ratings-btn button{
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(227, 188, 143);
+}
+.search-bar{
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(227, 188, 143);
+}
+
 .res-container{
     display: flex;
     flex-wrap: wrap;
-}
-
-.res-card {
-    margin: 5px;
-    height: 300px;
-    width: 185px;
-    background-color: rgb(250, 236, 219);
-    padding: 5px;
-    border-radius: 8px;
-}
-
-.res-card:hover {
-    cursor: pointer;
-    border: 2px solid rgb(151, 146, 146);
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-}
-
-.res-card>img {
-    max-height: 150px;
-    max-width: 190px;
-    align-content: center;
-    padding: 2px;
-}
-
-.res-name {
-    margin: 2px;
 }
 
 .body {
@@ -90,22 +86,68 @@ ul {
     padding: 10px;
     box-sizing: border-box;
 }
+
+.res-card {
+    margin: 5px;
+    height: 300px;
+    width: 185px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 236, 219);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    /* color: rgb(40, 39, 39); */
+    /* border: 2px solid rgb(49, 48, 48); */
+    border-radius: 8px;
+}
+
+.res-card>img {
+    height: 120px;
+    object-fit: cover;
+    width: 180px;
+    align-content: center;
+    padding: 2px;
+}
+
+.res-name {
+    margin: 2px;
+    height: 42.6px;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
 #cuisines{
-    max-height: 30px;
-    word-wrap: break-word
+    height: 65px;
+    word-wrap: break-word;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+
 }
 .rate-time {
-    max-height: 30px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    height: 30px;
 }
 
-.rate-time h5,
-p {
+.rating,p {
     margin: 10px;
 }
-
+.dev-time{
+    margin: 10px;
+}
+.price{
+    margin: 3px, 0px;
+}
 .footer {
     padding: 20px 10px;
     border: 1px solid black;
