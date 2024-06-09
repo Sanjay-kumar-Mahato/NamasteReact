@@ -1,0 +1,156 @@
+.header {
+  background-color: #da8524;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header > img {
+  width: 130px;
+  height: 130px;
+  padding: 5px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.nav-bar {
+  float: right;
+  flex-direction: column;
+  align-content: center;
+  width: 20%;
+  display: block;
+}
+
+.unorderred-nav li {
+  cursor: pointer;
+  background-color: #ffebcd;
+  border-radius: 5px;
+  max-width: 80px;
+  margin: 3px;
+  padding: 3px;
+}
+
+ul {
+  font-size: large;
+  list-style-type: none;
+}
+
+.body-top {
+  background-color: #ede5dc;
+  border-radius: 5px;
+}
+
+.address {
+  background-color: #fff;
+  border: 2px solid #e3bc8f;
+  border-radius: 5px;
+  padding: 2px 15px;
+}
+
+.top-ratings-btn button {
+  border: 2px solid #e3bc8f;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.search-bar {
+  border: 2px solid #e3bc8f;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.body {
+  flex-wrap: wrap;
+  width: auto;
+  padding: 5px;
+  display: flex;
+}
+
+.body-top {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.top-ratings-btn {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.res-card {
+  color: #000;
+  background-color: #faecdb;
+  border-radius: 8px;
+  width: 185px;
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  opacity: .7;
+  border-radius: 8px;
+}
+
+.res-card > img {
+  object-fit: cover;
+  align-content: center;
+  width: 180px;
+  height: 120px;
+  padding: 2px;
+}
+
+.res-name {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 42.6px;
+  margin: 2px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+#cuisines {
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 65px;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.rate-time {
+  box-sizing: border-box;
+  justify-content: space-between;
+  height: 30px;
+  display: flex;
+}
+
+.rating, p, .dev-time {
+  margin: 10px;
+}
+
+.price {
+  margin: 3px, 0px;
+}
+
+.footer {
+  text-align: center;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

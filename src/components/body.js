@@ -1,5 +1,6 @@
 import Restcard from "./restaurant_card";
 import { resList } from "../utils/demo_data";
+
 const Body = () => {
     return (
         <div className="body">
