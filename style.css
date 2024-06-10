@@ -39,7 +39,6 @@
     ;
 }
 ul {
-
     list-style-type: none;
     font-size: large;
 }
@@ -58,6 +57,10 @@ ul {
     padding: 2px 5px;
     border-radius: 5px;
     border: 2px solid rgb(227, 188, 143);
+}
+.top-ratings-btn button {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 .search-bar{
     margin: 5px;

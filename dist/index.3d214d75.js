@@ -27554,7 +27554,11 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurantCard = require("./restaurant_card");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _demoData = require("../utils/demo_data");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Body = ()=>{
+    _s();
+    const [listOfRests, setListOfRests] = (0, _react.useState)((0, _demoData.resList));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
@@ -27569,33 +27573,37 @@ const Body = ()=>{
                                     children: "Address :"
                                 }, void 0, false, {
                                     fileName: "src/components/body.js",
-                                    lineNumber: 9,
+                                    lineNumber: 11,
                                     columnNumber: 44
                                 }, undefined),
                                 "Maharani Farm,Jaipur,Rajasthan"
                             ]
                         }, void 0, true, {
                             fileName: "src/components/body.js",
-                            lineNumber: 9,
+                            lineNumber: 11,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 8,
+                        lineNumber: 10,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "top-ratings-btn",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: ()=>{
+                                const updatedResList = (0, _demoData.resList).filter((res)=>res.avgRating > 4);
+                                setListOfRests(updatedResList);
+                            },
                             children: "Top Ratings"
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 12,
+                            lineNumber: 14,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 11,
+                        lineNumber: 13,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27606,41 +27614,42 @@ const Body = ()=>{
                             className: "search-bar"
                         }, void 0, false, {
                             fileName: "src/components/body.js",
-                            lineNumber: 15,
+                            lineNumber: 20,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 14,
+                        lineNumber: 19,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body.js",
-                lineNumber: 7,
+                lineNumber: 9,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: (0, _demoData.resList).map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                children: listOfRests.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                         resData: restaurant
                     }, restaurant.id, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 21,
+                        lineNumber: 26,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 18,
+                lineNumber: 23,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/body.js",
-        lineNumber: 6,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
+_s(Body, "e1uHYWq0o5cV4jP3HAC/O+le8zs=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27651,7 +27660,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./restaurant_card":"9SZjq","../utils/demo_data":"ivRQr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9SZjq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./restaurant_card":"9SZjq","../utils/demo_data":"ivRQr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"9SZjq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$47b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
