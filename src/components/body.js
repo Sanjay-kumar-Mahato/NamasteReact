@@ -1,9 +1,12 @@
 import Restcard from "./restaurant_card";
-import { resList } from "../utils/demo_data";
+// import { resList } from "../utils/demo_data";
 import { useEffect, useState } from "react";
+import { PushSpinner } from "react-spinners-kit";
 
 const Body = () => {
-    const [listOfRests,setListOfRests] = useState(resList);
+    // const [listOfRests,setListOfRests] = useState(resList);
+    const [listOfRests,setListOfRests] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchData();
@@ -17,6 +20,18 @@ const Body = () => {
 
         setListOfRests(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
+
+    if(listOfRests.length === 0){
+        return(
+            <div className="spinnerContainer">
+ 
+                <div className="spinner">
+                    <PushSpinner size={30} color="#00ff89"
+                        loading={loading} />
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="body">

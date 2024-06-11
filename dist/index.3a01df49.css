@@ -40,6 +40,25 @@ ul {
   list-style-type: none;
 }
 
+.spinnerContainer {
+  text-align: center;
+  opacity: .7;
+  background-color: #5e5d5d;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+  height: 15%;
+  margin: 200px;
+  display: flex;
+  position: absolute;
+  transform: translate(100%, 20%);
+}
+
+.spinner {
+  margin: 5%;
+  padding: 20px;
+}
+
 .body-top {
   background-color: #ede5dc;
   border-radius: 5px;
